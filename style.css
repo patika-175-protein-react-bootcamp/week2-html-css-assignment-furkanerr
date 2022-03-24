@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+  width: 100%;
+  background-color: #222222;
+}
+.header {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heros {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: -10%;
+  overflow: hidden;
+}
+.marvelText {
+  margin-top: 36%;
+  width: 32%;
+  filter: drop-shadow(rgba(255, 255, 255, 0.25) 0px 4px 4px);
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
+  grid-gap: 2.5rem;
+  margin-top: 300px;
+}
+.portrait {
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  height: 600px;
+  margin-bottom: 100px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+}
+.heroName {
+  width: 125px;
+  height: 21px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 25px;
+  margin-bottom: 90px;
+}
+.hero {
+    
+  width: 370px;
+}
+.line {
+  position: absolute;
+  width: 370px;
+  height: 1px;
+  
+  background: #ffffff;
+  margin-bottom: 750px;
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 200px;
+  margin-left: auto;
+  margin-right: 170px;
+  width: 648px;
+  height: 72px;
+  color:#7E7E7E;
+  border: 1px solid #7E7E7E ;
+}
+.current{
+  font-size: x-large;
+  background-color: #7E7E7E;
+  color: black;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  height: 42px;
+}
+.prevSayilar{
+  display: flex;
+  justify-content: space-between;
+  font-size: x-large;
+  width: 150px;
+  
+  
+}
+.prev{
+  font-size:xx-large;
+  font-weight: bolder;
+  
+}
+.next{
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+
+@media only screen and (max-width: 400px) {
+  .pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: 37px;
+    width: 287px;
+    height: 72px;
+    color: #7E7E7E;
+    border: 1px solid #7E7E7E;
+  }
+  .prevSayilar {
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+    width: 100px;
+}
+  .portrait {
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 283px;
+    height: 463px;
+    margin-bottom: 100px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+}
+.hero {
+  width: 250px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+  grid-gap: 1.5rem;
+  margin-top: 132px;
+}
+.line {
+  position: absolute;
+  width: 250px;
+  height: 1px;
+  background: #ffffff;
+  margin-bottom: 580px;
+}
+.heroName {
+  width: 109px;
+    height: 21px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 25px;
+    margin-bottom: 104px;
+}
+
+}
+@media only screen  and (min-width:400px) and (max-width:550px)  {
+  .paginationContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 342px;
+    height: 72px;
+    margin-left: 140px;
+  }
+  .pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    width: 342px;
+    height: 72px;
+    color: #7E7E7E;
+    border: 1px solid #7E7E7E;
+  }
+  .prevSayilar {
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+    width: 100px;
+}}
